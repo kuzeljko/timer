@@ -10,6 +10,14 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
+/**
+* Display all errors when APPLICATION_ENV is development.
+*/
+if ($_SERVER['APPLICATION_ENV'] == 'development') {
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+}
+
 // Setup autoloading
 require 'init_autoloader.php';
 
