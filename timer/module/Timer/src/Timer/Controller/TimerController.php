@@ -1,7 +1,5 @@
 <?php
-/**
- *
- */
+
 namespace Timer\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
@@ -25,4 +23,3 @@ class TimerController extends AbstractActionController
   {
   }
 }
-  ?>
